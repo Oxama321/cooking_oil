@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+<style>
+   #box1
+   {
+       width: 400px;
+       height: 300px;
+       background-color: rgb(91, 163, 121);
+       display: block;
+   }
+
+   #box2
+   {
+       width: 400px;
+       height: 300px;
+       background-color: gold;
+       display: none;
+   }
+
+   #box3
+   {
+       width: 400px;
+       height: 300px;
+       background-color: teal;
+       display: none;
+   }
+</style>
+
+<body>
+
+    <button type="submit" id="btn"> Fade Functions </button>
+
+    <div id="box1"> <img style="width: 400px; height: 300px;" src="https://guidetopakistan.pk/wp-content/uploads/2021/06/skardu1.jpg" alt=""> </div>
+    <div id="box2"> <img style="height: 300px; width: 400px;" src="https://www.nationsonline.org/gallery/Switzerland/Sunrise-on-the-Matterhorn.jpg" alt=""> </div>
+    <div id="box3"> <img style="height: 300px; width: 400px;" src="https://www.worldatlas.com/upload/70/33/ab/shutterstock-115227475.jpg" alt=""> </div>
+
+    <script>
+    
+       $("#btn").click(function()
+           {
+               $("#box1").fadeIn();
+               $("#box2").fadeIn(slow);
+               $("#box3").fadeIn(3100);
+           });
+
+    
+    </script>
+</body>
+</html>

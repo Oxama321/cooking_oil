@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+ #div1
+ {
+     height: 120px;
+     width: 120px;
+     background-color: sienna;
+     border: solid;
+     text-align: center;
+     padding: 8%;
+ }
+</style>
+<body>
+    <div id="div1">
+
+    <h2> Acha Chalta Hun Duaon Mai Yaad Rakhna </h2>
+
+   </div>
+
+   <br><br>
+
+   <button type="submit" id="b1"> CALL BACK </button>
+
+   <script>
+    $("#b1").click(function()
+    {
+        $("#h2").hide("slow", function()
+        {
+            alert("OK BYEE");
+        });
+    });
+   </script>
+
+   <button></button>
+</body>
+</html>
